@@ -1,0 +1,48 @@
+<mat-toolbar class="dark">
+
+    <span>Blockbuster Movies</span>
+    <span class="example-spacer"></span>
+  
+  
+    <mat-icon class="space">notifications</mat-icon>
+  
+    <div class="avatar">
+      <mat-icon class="av-icon">person</mat-icon>
+    </div>
+  </mat-toolbar>
+  
+  <div class="container">
+    <div class="banner">
+      <div class="bg-video">
+        <video [loop]="true" autoplay src="../../assets/bg.mp4"></video>
+      </div>
+  
+      <div class="box-chamada">
+        <h2>A melhor plataforma de filmes online!</h2>
+        <p>Acesse nosso conteúdo e confira filmes de tirar o fôlego... Preparados? Pegue a picoca e vamos!</p>
+        <button (click)="treze()" class="btn-banner" color="warn" mat-raised-button>Ir Para Questão 13</button>
+      </div>
+    </div>
+        
+   <div class="container-2">
+    <div class="mais-buscados">
+      <h2 class="title-txt">Assistidos recentemente</h2>
+  
+      <div class="item-filme">
+        <mat-card class="example-card" *ngFor="let i of dados | async">
+          <img mat-card-image [src]="i.poster">
+        </mat-card>
+      </div>
+    </div>
+  
+    <div class="mg-top-16 mais-buscados">
+      <h2 class="title-txt">Populares</h2>
+  
+      <div class="item-filme">
+        <mat-card class="example-card" *ngFor="let i of dados | async">
+          <img mat-card-image [src]="i.poster">
+        </mat-card>
+      </div>
+    </div> 
+   </div>
+  </div>

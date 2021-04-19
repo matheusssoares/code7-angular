@@ -1,0 +1,173 @@
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.example-button-row button,
+.example-button-row a {
+    margin-right: 8px;
+}
+
+.dark {
+    background-color: rgb(53, 52, 52); 
+    color: #fff;
+    min-height: 80px;
+}
+
+.avatar {
+    border: 2px solid #fff;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+.av-icon {
+    display: block;
+    margin: 5px auto 10px auto;
+}
+
+.space {
+    margin-right: 16px;
+}
+.container {
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 450px;
+}
+
+.banner > .bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; 
+    width: 100%;
+    height: 100%;
+    overflow: hidden; 
+}
+
+.banner > .bg-video > video {
+    width: 100%;
+}
+
+.box-chamada {
+    position: absolute;
+    color: #fff;
+    width: 360px;
+    height: auto;
+    display: grid;
+}
+
+.box-chamada h2 {
+    margin-top: 60px;
+    text-align: justify;
+    font-size: 32px;
+    padding-top: 20px;
+    margin-left: 20px;
+}
+.box-chamada p {
+    text-align: justify;
+    font-size: 18px;
+    margin-left: 20px;
+    color: rgb(228, 233, 237);
+}
+
+.btn-banner {
+    margin-left: 20px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    padding: 12px;
+    background-color: #e82933;
+}
+.container-2 {
+    display: grid;
+    background: rgb(53, 52, 52); 
+}
+.mais-buscados {
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.title-txt {
+    font-size: 28px;
+}
+
+.item-filme {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.example-card {
+    display: inline-block;
+    width: 250px;
+    height: 350px;
+    margin: 0 20px 50px auto;
+}
+
+.mg-top-16 {
+    margin-top: 50px;
+}
+
+@media screen and (min-width: 481px) and (max-width: 600px) {
+    .banner {
+        height: 320px;
+    }
+
+    .box-chamada h2 {
+        margin-top: 40px;
+    }
+
+    .example-card {
+        width: 228px;
+        margin: 10px 20px 50px auto;
+    }
+    /* .btn-banner {
+        display: none;
+    } */
+}
+
+@media screen and (min-width: 361px) and (max-width: 480px) {
+    .banner {
+        height: 320px;
+    }
+
+    .example-card {
+        width: 400px;
+        margin: 10px 20px 50px auto;
+    }
+    /* .btn-banner {
+        display: none;
+    } */
+}
+
+ @media screen and (max-width: 360px) {    
+    .banner {
+        height: 280px;
+    }
+    .box-chamada {
+        width: 260px;
+        margin-top: -70px;
+    }
+    .box-chamada h2 {
+        font-size: 25px;
+    }
+    .box-chamada p {
+        font-size: 12px;
+    }
+    /* .btn-banner {
+        display: none;
+    } */
+    .title-txt {
+        font-size: 25px;
+    }
+
+    .example-card {
+        width: 285px;
+    }
+    
+}

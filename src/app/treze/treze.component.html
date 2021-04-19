@@ -1,0 +1,34 @@
+<mat-toolbar class="dark">
+
+    <span>Blockbuster Movies</span>
+    <span class="example-spacer"></span>
+  
+  
+    <mat-icon class="space">notifications</mat-icon>
+  
+    <div class="avatar">
+      <mat-icon class="av-icon">person</mat-icon>
+    </div>
+  </mat-toolbar>
+  <div class="container">
+      <h2>Lista de Filmes - Questão 13</h2>
+
+      <div class="box">
+        <div class="mg-top-16 item-filme">
+            <mat-card class="example-card" *ngFor="let i of dados | async">
+              <img mat-card-image [src]="i.poster">
+              <mat-card-header>
+                <div mat-card-avatar class="example-header-image"></div>
+                <mat-card-title>{{i.nome}} - {{ i.ano }}</mat-card-title>
+                <mat-card-subtitle>{{ i.diretor }} / {{ i.genero }}</mat-card-subtitle>
+              </mat-card-header>
+              <mat-card-content>
+                <p>
+                  {{ i.descricao }}
+                </p>
+              </mat-card-content>
+            </mat-card>
+          </div>
+      </div>
+      <button (click)="home()" class="btn-banner" color="warn" mat-raised-button>Ir Para Questão 14</button>
+  </div>
